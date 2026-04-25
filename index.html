@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura Coffee & Bakes</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <h2>AURA COFFEE</h2>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">ORDER NOW</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">COMMUNITY</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">CATERING</a></li>
+        <li><a href="#">CONTACT US</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-left" id="hero-slider">
+        <h1 class="bg-text" id="hero-bg-text">COFFEE</h1>
+        <img id="hero-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Coffee">
+        <div class="plate"></div>
+    </div>
+    <div class="hero-right">
+        <h2>THE COFFEE FLAVORS YOU’LL LOVE EVERY DAY</h2>
+        <p>Freshly brewed coffee, handcrafted blends, and cozy moments in every cup.</p>
+        <a href="#order" class="btn">EXPLORE OUR MENU</a>
+    </div>
+</header>
+
+<section class="featured-section">
+    <h2 class="section-title">DISCOVER OUR SIGNATURE BLEND</h2>
+    <div class="featured-container">
+        <div class="featured-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800" alt="Coffee">
+        </div>
+        <div class="featured-text">
+            <h3>SIGNATURE COLD BREW</h3>
+            <p>Experience the smooth richness of our signature cold brew, crafted with premium beans and slow-steeped for hours to unlock deep flavors. Every sip delivers a perfect balance of boldness and refreshment.</p>
+            <p class="highlight">Available for a limited time with special combos and refreshing add-ons.</p>
+            <a href="#" class="btn btn-outline">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="popular-section">
+    <h2 class="section-title">SHOP OUR MOST POPULAR DRINKS</h2>
+    <div class="grid-4">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=400">
+            <h4>ICED LATTE<br>(REGULAR)</h4>
+            <p>$4.50</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400">
+            <h4>CAPPUCCINO<br>(HOT)</h4>
+            <p>$3.80</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=400">
+            <h4>MOCHA DELIGHT<br>(SPECIAL)</h4>
+            <p>$5.20</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=400">
+            <h4>COLD BREW<br>(CLASSIC)</h4>
+            <p>$3.50</p>
+        </div>
+    </div>
+</section>
+
+<section class="info-banner">
+    <div class="info-item">
+        <h4>FRESHLY BREWED</h4>
+        <p>Every cup is made fresh using premium beans.</p>
+    </div>
+    <div class="info-item">
+        <h4>QUALITY COFFEE</h4>
+        <p>Bringing a taste of craft coffee to every cup.</p>
+    </div>
+    <div class="info-item">
+        <h4>FAST SERVICE</h4>
+        <p>Quick preparation with consistent quality.</p>
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <h2 class="section-title">ORDER YOUR FAVORITE COFFEE</h2>
+    
+    <div class="filter-nav">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="coffee">HOT COFFEE</button>
+        <button class="filter-btn" data-filter="cold">COLD COFFEE</button>
+        <button class="filter-btn" data-filter="snacks">SNACKS</button>
+    </div>
+
+    <div class="grid-4 filter-grid">
+        <div class="product-card filter-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400">
+            <h4>ESPRESSO</h4><p>$2.50</p>
+        </div>
+        <div class="product-card filter-item" data-category="cold">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=400">
+            <h4>ICED LATTE</h4><p>$4.50</p>
+        </div>
+        <div class="product-card filter-item" data-category="snacks">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400">
+            <h4>CROISSANT</h4><p>$3.00</p>
+        </div>
+        <div class="product-card filter-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400">
+            <h4>CAPPUCCINO</h4><p>$3.80</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-col">
+        <div class="logo"><h2>AURA COFFEE</h2></div>
+        <p>📍 Salem, Tamil Nadu</p>
+        <p>📞 +91 98765 43210</p>
+    </div>
+    <div class="footer-col">
+        <h4>LINKS</h4>
+        <ul>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">ORDER</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+        <p>Get updates on new drinks and offers.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Email*" required>
+            <button type="submit">→</button>
+        </form>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
