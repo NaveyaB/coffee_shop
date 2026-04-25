@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura Coffee & Bakes</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0f0f0f;color:#fff;}
+.navbar{position:fixed;width:100%;top:0;display:flex;justify-content:space-between;padding:15px 40px;background:#000;z-index:1000;}
+.nav-links{display:flex;gap:20px;list-style:none;}
+.nav-links a{color:#fff;text-decoration:none;cursor:pointer;}
+.section{padding:80px 20px;}
+.container{max-width:1100px;margin:auto;}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.product-card{background:#1a1a1a;padding:10px;border-radius:10px;text-align:center;}
+.product-card img{width:100%;border-radius:10px;}
+.btn{padding:10px 20px;background:#ff8c42;color:#fff;text-decoration:none;display:inline-block;margin-top:10px;}
+.hidden{display:none;}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<h2>AURA COFFEE</h2>
+<ul class="nav-links">
+<li><a onclick="showPage('orderPage')">ORDER NOW</a></li>
+<li><a onclick="showPage('menuPage')">MENU</a></li>
+<li><a onclick="showPage('communityPage')">COMMUNITY</a></li>
+<li><a onclick="showPage('galleryPage')">GALLERY</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+<section id="homePage" class="section">
+<h2>Welcome to Aura Coffee</h2>
+<p>Premium coffee experience.</p>
+</section>
+
+<!-- ORDER PAGE -->
+<section id="orderPage" class="section hidden">
+<h2>Order Your Favorite Coffee</h2>
+<div class="grid-4">
+
+<!-- 20 ITEMS -->
+<script>
+for(let i=1;i<=20;i++){
+ document.write(`
+ <div class="product-card">
+ <img src="https://picsum.photos/300?random=${i}">
+ <h4>Coffee ${i}</h4>
+ <p>$${(3+i/2).toFixed(2)}</p>
+ <button class="btn">Order</button>
+ </div>`);
+}
+</script>
+
+</div>
+</section>
+
+<!-- MENU PAGE -->
+<section id="menuPage" class="section hidden">
+<h2>Menu</h2>
+<p>Explore our full coffee and snacks menu.</p>
+</section>
+
+<!-- COMMUNITY -->
+<section id="communityPage" class="section hidden">
+<h2>Community</h2>
+<p>Join our coffee lovers community ☕</p>
+</section>
+
+<!-- GALLERY -->
+<section id="galleryPage" class="section hidden">
+<h2>Gallery</h2>
+<div class="grid-4">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" width="100%">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" width="100%">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" width="100%">
+<img src="https://images.unsplash.com/photo-1521305916504-4a1121188589" width="100%">
+</div>
+</section>
+
+<script>
+function showPage(pageId){
+ document.querySelectorAll('section').forEach(sec=>sec.classList.add('hidden'));
+ document.getElementById(pageId).classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
